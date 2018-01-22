@@ -16,7 +16,7 @@ public class ConnectBase {
     public void open() throws ClassNotFoundException {
         Class.forName("com.mysql.jdbc.Driver");
         try{
-            co = DriverManager.getConnection("jdbc:mysql://localhost:3306", "root", "lolka999");
+            co = DriverManager.getConnection("jdbc:mysql://localhost:3306", "root", "1");
             Statement statement = co.createStatement();
             statement.executeUpdate("USE summary;");
             System.out.println("Connection!");
