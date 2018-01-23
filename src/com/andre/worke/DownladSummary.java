@@ -11,11 +11,14 @@ import java.util.ArrayList;
 import static java.lang.Thread.sleep;
 
 public class DownladSummary {
-    ArrayList<String> list=new ArrayList<>();
-    Document doc = null;
-    String url;
+    private ArrayList<String> list=new ArrayList<>();
+    private Document doc = null;
+    private String url;
+    private InsertBase insertBase;
 
-    InsertBase insertBase;
+    public ArrayList<String> getList() {
+        return list;
+    }
 
     public DownladSummary(InsertBase insertBase) {
         this.insertBase = insertBase;

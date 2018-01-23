@@ -20,9 +20,9 @@ public class Main {
 
         DownladSummary sum = new DownladSummary(insertBase);
         sum.start("https://www.avito.ru/ekaterinburg/sobaki");
-        System.out.println(sum.list.size());
+        System.out.println(sum.getList().size());
 
-        for(String url : sum.list){
+        for(String url : sum.getList()){
             sum.savePage("https://www.avito.ru"+url);
         }
 

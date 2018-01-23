@@ -5,8 +5,8 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class InsertBase {
-    int id = 1;
-    Connection co;
+    private int id = 1;
+    private Connection co;
     public InsertBase(Connection co) {
         this.co = co;
 
