@@ -12,7 +12,6 @@ import static java.lang.Thread.sleep;
 
 public class DownladSummary {
     ArrayList<String> list=new ArrayList<>();
-    int id = 1;
     Document doc = null;
     String url;
 
@@ -24,7 +23,6 @@ public class DownladSummary {
 
     public void start(String ur) throws IOException, InterruptedException {
 
-        int si = 1;
         this.url = ur;
 
         while (true){
@@ -47,8 +45,6 @@ public class DownladSummary {
             }
             try {
                 url = "https://www.avito.ru" + doc.getElementsByClass("js-pagination-next").first().attr("href");
-                si++;
-                if(si==5) break;
             } catch (Exception e){
                 break;
             }
