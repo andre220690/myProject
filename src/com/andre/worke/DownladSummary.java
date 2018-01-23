@@ -24,7 +24,7 @@ public class DownladSummary {
         this.insertBase = insertBase;
     }
 
-    public void start(String ur) throws IOException, InterruptedException {
+    public void start(String ur) throws InterruptedException {
 
         this.url = ur;
 
